@@ -1,0 +1,343 @@
+@import 'settings';
+@import 'foundation-emails';
+
+
+#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+body {width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;font-family: Verdana, sans-serif;}
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+/* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+/* End reset */
+
+// @media screen {
+//   @font-face {
+//     font-family: 'GT Eesti Text ULight';
+//     src: url('http://webfonts.sidebar.io/fonts/GT-Eesti-Text-ULight-web/GT-Eesti-Text-ULight.woff') format('woff');
+//     font-weight: 100;
+//     font-style: normal;
+//   }
+//   @font-face {
+//     font-family: 'GT Eesti Text Light';
+//     src: url('http://webfonts.sidebar.io/fonts/GT-Eesti-Text-Light-web/GT-Eesti-Text-Light.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+//   }
+//   @font-face {
+//     font-family: 'GT Eesti Text Medium';
+//     src: url('http://webfonts.sidebar.io/fonts/GT-Eesti-Text-Medium-web/GT-Eesti-Text-Medium.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//   }
+// }
+
+
+.top {
+  margin-top: 30px;
+}
+
+body {
+  color:#231f20;
+}
+
+table.body {
+  background-color: #fff;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-family: Rockwell, Georgia, serif;
+  color: #00a1de;
+  font-weight:normal;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+h1 {font-size:1.5em;
+}
+h2 {font-size:1.3em;}
+h3 {
+  font-size:1.2em;
+  margin-bottom: 5px;
+}
+
+.top-left, .top-right {
+  text-align: right;
+  padding-top: 53px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-top: 0px !important;
+  }
+}
+
+.top-right h2, .top-right h4 {
+  font-family: Rockwell, Georgia, serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+.top-right h2 {
+  font-family: Rockwell, Georgia, serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.1em;
+  text-align: right;
+  font-size: 1.4em;
+  color: #00a1de;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 1.5em !important;
+    margin-bottom: 5px !important;
+    text-align: left !important;
+  }
+}
+
+.top-right h4 {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #000;
+  font-size: .8em;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: .7em !important;
+    text-align: left !important;
+  }
+}
+
+.dark {
+  color: #000;
+}
+
+.hero, .hero-extra {
+	margin-top: 10px;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #000;
+}
+
+.hero-extra {
+  margin-top: 0px;
+  padding-top: 0px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2em;
+}
+
+a, .hero a, .secondary h3 a, .events h3 a {
+  text-decoration: none;
+}
+
+a:visited, .hero a:visited, .secondary h3 a:visited, .events h3 a:visited {
+  text-decoration: none;
+  color: inherit;
+  color: #00a1de;
+}
+
+.hero h1 {
+  font-size: 2em;
+  // margin-bottom: 5px;
+  color: #00a1de;
+  word-break: keep-all;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 1.5em !important;
+  }
+}
+
+.hero h2 a {
+  font-size: 1em;
+  word-break: keep-all;
+  font-family: Rockwell, Georgia, serif;
+  color: #00a1de;
+  font-weight:normal;
+  text-decoration: none;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: .9em !important;
+  }
+}
+
+.hero p {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  padding-bottom: .5em;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 1.0em !important;
+  }
+}
+
+.label {
+  color: #000;
+  font-family: Verdana, sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: .7em !important;
+  }
+}
+
+.secondary h3 a, .events h3 a {
+  color: #00a1de;
+  font-family: Verdana, sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  font-size: .9em;
+  margin-bottom: 0px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: .8em !important;
+  }
+}
+
+.events p {
+  padding-bottom: 20px;
+}
+
+.imgpop {
+  margin: 1em 0;
+  // text-align: center;
+}
+
+.secondary, .events {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1.5em 0 1.5em 0;
+}
+
+.events {
+  padding: 1.5em 0 0 0;
+
+}
+
+// .ExternalClass .secondary, .externalclass .events {
+//   padding: 1.5em 0 5em 0;
+// }
+
+
+.events {
+  border-bottom: none;
+}
+
+.secondary p, .events p {
+  font-size: 1.0em;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: .9em !important;
+  }
+}
+
+.events p {
+  margin-bottom: 0px;
+}
+
+.events p a {
+  margin-bottom: 20px
+}
+
+.byline, .lead {
+  font-weight: 700;
+}
+
+.byline {
+  font-size: .9em;
+}
+
+.intro {
+  padding-bottom: 1em;
+}
+
+.footer {
+  border-top: 5px solid #00AAE7;
+  padding: 2em 0 0 0;
+}
+
+.footer p, .foot2 p  {
+  font-size: .9em;
+  line-height: 1.3em;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: .7em !important;
+  }
+}
+
+.subfooter p {
+  font-size: .7em;
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+}
+
+.subfooter {
+  border-top: 1px solid #000;
+  padding: 1em 0 4em 0;
+}
+
+.banner td {
+    padding: 0px 0px 0px 10px !important;
+    text-align: left;
+}
+
+.banner {
+  background-color: #00AAE7;
+}
+
+// .banner th.columns, .banner th.column {
+//   padding-bottom: 0px;
+// }
+
+// .banner ul {
+//   padding: 20px;
+//   -webkit-margin-before: 0em;
+//   -webkit-margin-after: 0em;
+//   display: block;
+// }
+
+.subfooter li, .banner li {
+  float: left;
+  font-size: .9em;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.push {
+  margin-left: 20px;
+}
+
+.banner p {
+  font-weight: 700;
+  font-size: .9em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.banner p a {
+  color: #fff;
+}
+
+.subfooter p a {
+  color: #000;
+}
+
+.noTop {
+	margin-top: -100px;
+}
+
+b, strong {color:#00a0de;}
+/*ul {
+	list-style-type:disc;
+    list-style-image: url('https://info.bai.org/rs/415-RKB-576/images/bullet.png');
+	margin-left: 1.5em;
+	padding-left:0;
+}*/
+
+
+.cta-area {height:22px;}
+.cta-area a {display:block;color:#ffffff;text-decoration:none;font-family: 'Museo Slab W01_300', Georgia, serif; height:auto;}
+hr {height:1px;background-color:#004065;border:none;margin:50px 0 30px 0;display:block;}
+.white-text {color:#ffffff;}
+.white-text a {color:#ffffff;text-decoration:underline;}
+.tiny {font-size:10px;}
+.im {color:#000000;}
+.ii a[href] {color: #ffffff !important;text-decoration: none !important;}
+.ii .footer-table a[href] {color: #ffffff !important;text-decoration: underline !important;}
+
+#main-headline p, #secondary-headline p, #third-headline p {margin-bottom:0px;}
